@@ -1,6 +1,6 @@
-^C:\USERS\KAMALI\DESKTOP\ANISH\USRS485\BUILD\WINDOWS\X64\CMAKEFILES\FA427D0DD5B025CFAB973B818FEEAAAC\FLUTTER_WINDOWS.DLL.RULE
+^C:\USERS\KAMALI\DESKTOP\ANISH\FIMWARE_MONITORING_TOOL\BUILD\WINDOWS\X64\CMAKEFILES\352933A43318582D2AA0F2BC05DF7D94\FLUTTER_WINDOWS.DLL.RULE
 setlocal
-"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E env FLUTTER_ROOT=C:\flutter PROJECT_DIR=C:\Users\Kamali\Desktop\Anish\USRS485 FLUTTER_ROOT=C:\flutter FLUTTER_EPHEMERAL_DIR=C:\Users\Kamali\Desktop\Anish\USRS485\windows\flutter\ephemeral PROJECT_DIR=C:\Users\Kamali\Desktop\Anish\USRS485 FLUTTER_TARGET=C:\Users\Kamali\Desktop\Anish\USRS485\lib\main.dart DART_DEFINES=RkxVVFRFUl9WRVJTSU9OPTMuMzUuNw==,RkxVVFRFUl9DSEFOTkVMPXN0YWJsZQ==,RkxVVFRFUl9HSVRfVVJMPWh0dHBzOi8vZ2l0aHViLmNvbS9mbHV0dGVyL2ZsdXR0ZXIuZ2l0,RkxVVFRFUl9GUkFNRVdPUktfUkVWSVNJT049YWRjOTAxMDYyNQ==,RkxVVFRFUl9FTkdJTkVfUkVWSVNJT049MDM1MzE2NTY1YQ==,RkxVVFRFUl9EQVJUX1ZFUlNJT049My45LjI= DART_OBFUSCATION=false TRACK_WIDGET_CREATION=true TREE_SHAKE_ICONS=false PACKAGE_CONFIG=C:\Users\Kamali\Desktop\Anish\USRS485\.dart_tool\package_config.json C:/flutter/packages/flutter_tools/bin/tool_backend.bat windows-x64 Debug
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E env FLUTTER_ROOT=C:\flutter PROJECT_DIR=C:\Users\Kamali\Desktop\Anish\FIMWARE_MONITORING_TOOL FLUTTER_ROOT=C:\flutter FLUTTER_EPHEMERAL_DIR=C:\Users\Kamali\Desktop\Anish\FIMWARE_MONITORING_TOOL\windows\flutter\ephemeral PROJECT_DIR=C:\Users\Kamali\Desktop\Anish\FIMWARE_MONITORING_TOOL FLUTTER_TARGET=C:\Users\Kamali\Desktop\Anish\FIMWARE_MONITORING_TOOL\lib\main.dart DART_DEFINES=RkxVVFRFUl9WRVJTSU9OPTMuMzUuNw==,RkxVVFRFUl9DSEFOTkVMPXN0YWJsZQ==,RkxVVFRFUl9HSVRfVVJMPWh0dHBzOi8vZ2l0aHViLmNvbS9mbHV0dGVyL2ZsdXR0ZXIuZ2l0,RkxVVFRFUl9GUkFNRVdPUktfUkVWSVNJT049YWRjOTAxMDYyNQ==,RkxVVFRFUl9FTkdJTkVfUkVWSVNJT049MDM1MzE2NTY1YQ==,RkxVVFRFUl9EQVJUX1ZFUlNJT049My45LjI= DART_OBFUSCATION=false TRACK_WIDGET_CREATION=true TREE_SHAKE_ICONS=false PACKAGE_CONFIG=C:\Users\Kamali\Desktop\Anish\FIMWARE_MONITORING_TOOL\.dart_tool\package_config.json C:/flutter/packages/flutter_tools/bin/tool_backend.bat windows-x64 Debug
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
@@ -8,7 +8,7 @@ endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
-^C:\USERS\KAMALI\DESKTOP\ANISH\USRS485\BUILD\WINDOWS\X64\CMAKEFILES\BC1D2A2DBECFFB3E76E0F742693FF3D3\FLUTTER_ASSEMBLE.RULE
+^C:\USERS\KAMALI\DESKTOP\ANISH\FIMWARE_MONITORING_TOOL\BUILD\WINDOWS\X64\CMAKEFILES\FBB00D72F836308317AF8A5B2C4E2967\FLUTTER_ASSEMBLE.RULE
 setlocal
 :cmEnd
 endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
@@ -16,9 +16,9 @@ endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
-^C:\USERS\KAMALI\DESKTOP\ANISH\USRS485\WINDOWS\FLUTTER\CMAKELISTS.TXT
+^C:\USERS\KAMALI\DESKTOP\ANISH\FIMWARE_MONITORING_TOOL\WINDOWS\FLUTTER\CMAKELISTS.TXT
 setlocal
-"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/Kamali/Desktop/Anish/USRS485/windows -BC:/Users/Kamali/Desktop/Anish/USRS485/build/windows/x64 --check-stamp-file C:/Users/Kamali/Desktop/Anish/USRS485/build/windows/x64/flutter/CMakeFiles/generate.stamp
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/Kamali/Desktop/Anish/FIMWARE_MONITORING_TOOL/windows -BC:/Users/Kamali/Desktop/Anish/FIMWARE_MONITORING_TOOL/build/windows/x64 --check-stamp-file C:/Users/Kamali/Desktop/Anish/FIMWARE_MONITORING_TOOL/build/windows/x64/flutter/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone

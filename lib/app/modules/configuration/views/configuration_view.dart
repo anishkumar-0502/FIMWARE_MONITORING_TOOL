@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import '../../dashboard/controllers/bms_controller.dart';
+import '../../../data/models/predefined_command.dart';
 import 'dart:typed_data';
 
 class ConfigurationView extends GetView<BmsController> {
@@ -63,12 +64,9 @@ class ConfigurationView extends GetView<BmsController> {
           Wrap(
             spacing: 8,
             runSpacing: 8,
-            children: controller.predefinedCommands.map((cmd) => ActionChip(
-              label: Text(cmd.name),
-              onPressed: () => controller.sendRaw(
-                controller.sendRawParseHex(cmd.hexData),
-                cmd.name
-              ),
+            children: controller.sendSequences.map((seq) => ActionChip(
+              label: Text(seq.name),
+              onPressed: () => controller.sendSequence(seq),
             )).toList(),
           ),
         ],

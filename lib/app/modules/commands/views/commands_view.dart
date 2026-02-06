@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import '../../dashboard/controllers/bms_controller.dart';
+import '../../../data/models/predefined_command.dart';
 import '../../../data/services/serial_service.dart';
 
 class CommandsView extends GetView<BmsController> {
@@ -91,19 +92,19 @@ class CommandsView extends GetView<BmsController> {
           ),
           Expanded(
             child: ListView.separated(
-              itemCount: controller.predefinedCommands.length,
+              itemCount: controller.sendSequences.length,
               separatorBuilder: (context, index) => const Divider(height: 1),
               itemBuilder: (context, index) {
-                final cmd = controller.predefinedCommands[index];
+                final seq = controller.sendSequences[index];
                 return ListTile(
-                  title: Text(cmd.name, style: const TextStyle(fontWeight: FontWeight.bold)),
+                  title: Text(seq.name, style: const TextStyle(fontWeight: FontWeight.bold)),
                   subtitle: Text(
-                    cmd.hexData,
+                    seq.sequence,
                     style: const TextStyle(fontFamily: 'monospace', color: Colors.blueAccent),
                   ),
                   trailing: ElevatedButton(
                     onPressed: serialService.isConnected 
-                      ? () => controller.sendRaw(cmd.bytes, cmd.name)
+                      ? () => controller.sendSequence(seq)
                       : null,
                     child: const Text("SEND"),
                   ),

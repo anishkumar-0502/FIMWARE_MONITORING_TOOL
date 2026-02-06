@@ -1,22 +1,22 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="C:\Users\Kamali\Desktop\Anish\USRS485\windows\flutter\ephemeral\.plugin_symlinks\flutter_libserialport\third_party\libserialport\serialport.c">
+    <ClCompile Include="C:\Users\Kamali\Desktop\Anish\FIMWARE_MONITORING_TOOL\windows\flutter\ephemeral\.plugin_symlinks\flutter_libserialport\third_party\libserialport\serialport.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Kamali\Desktop\Anish\USRS485\windows\flutter\ephemeral\.plugin_symlinks\flutter_libserialport\third_party\libserialport\timing.c">
+    <ClCompile Include="C:\Users\Kamali\Desktop\Anish\FIMWARE_MONITORING_TOOL\windows\flutter\ephemeral\.plugin_symlinks\flutter_libserialport\third_party\libserialport\timing.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Kamali\Desktop\Anish\USRS485\windows\flutter\ephemeral\.plugin_symlinks\flutter_libserialport\third_party\libserialport\windows.c">
+    <ClCompile Include="C:\Users\Kamali\Desktop\Anish\FIMWARE_MONITORING_TOOL\windows\flutter\ephemeral\.plugin_symlinks\flutter_libserialport\third_party\libserialport\windows.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\Kamali\Desktop\Anish\USRS485\windows\flutter\ephemeral\.plugin_symlinks\flutter_libserialport\windows\libserialport\CMakeLists.txt" />
+    <CustomBuild Include="C:\Users\Kamali\Desktop\Anish\FIMWARE_MONITORING_TOOL\windows\flutter\ephemeral\.plugin_symlinks\flutter_libserialport\windows\libserialport\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Source Files">
-      <UniqueIdentifier>{960377EF-F50F-34FF-9782-EA0C17D8499A}</UniqueIdentifier>
+      <UniqueIdentifier>{1EE6F6D0-AD4A-3C5E-AFBD-7E7C8E30C7FC}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

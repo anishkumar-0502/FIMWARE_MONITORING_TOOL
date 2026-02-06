@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:intl/intl.dart';
 import '../controllers/bms_controller.dart';
+import '../../../data/models/predefined_command.dart';
 import '../../../data/services/logging_service.dart';
 import '../../../data/services/serial_service.dart';
 import '../../connection/views/connection_view.dart';
@@ -76,53 +77,87 @@ class DashboardView extends GetView<BmsController> {
           Expanded(
             child: Row(
               children: [
-                // Sidebar: Send Sequences
+                // Sidebar: Sequences
                 Container(
-                  width: 250,
+                  width: 450,
                   decoration: BoxDecoration(
-                    color: const Color(0xFFE1E1E1),
+                    color: const Color(0xFFF0F0F0), // Light grey BG
                     border: Border(right: BorderSide(color: Colors.grey[400]!)),
                   ),
                   child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Padding(
-                        padding: const EdgeInsets.all(8.0),
-                        child: TextField(
-                          onChanged: (val) => controller.searchQuery.value = val,
-                          style: const TextStyle(fontSize: 12),
-                          decoration: const InputDecoration(
-                            hintText: "Search Sequences...",
-                            prefixIcon: Icon(Icons.search, size: 16),
-                            isDense: true,
-                            contentPadding: EdgeInsets.all(8),
-                            fillColor: Colors.white,
-                            filled: true,
-                            border: InputBorder.none,
-                            enabledBorder: InputBorder.none,
-                            focusedBorder: InputBorder.none,
-                          ),
+                      // Search and Add Actions
+                      Container(
+                        height: 35,
+                        padding: const EdgeInsets.symmetric(horizontal: 4),
+                        color: Colors.white,
+                        child: Row(
+                          children: [
+                            Expanded(
+                              child: TextField(
+                                onChanged: (val) => controller.searchQuery.value = val,
+                                style: const TextStyle(fontSize: 12),
+                                decoration: const InputDecoration(
+                                  hintText: "Search Sequences...",
+                                  prefixIcon: Icon(Icons.search, size: 14),
+                                  isDense: true,
+                                  contentPadding: EdgeInsets.symmetric(vertical: 8),
+                                  fillColor: Color(0xFFF5F5F5),
+                                  filled: true,
+                                  border: InputBorder.none,
+                                ),
+                              ),
+                            ),
+                            const SizedBox(width: 4),
+                            SizedBox(
+                              height: 30,
+                              width: 30,
+                              child: IconButton(
+                                icon: const Icon(Icons.add_box, size: 24, color: Colors.blue),
+                                onPressed: () => _showAddSequenceDialog(context),
+                                tooltip: "Add New Sequence",
+                                padding: EdgeInsets.zero,
+                                constraints: const BoxConstraints(),
+                              ),
+                            ),
+                          ],
                         ),
                       ),
-                      Container(
-                        padding: const EdgeInsets.all(8),
-                        width: double.infinity,
-                        color: Colors.grey[300],
-                        child: const Text("Send Sequences", style: TextStyle(fontWeight: FontWeight.bold)),
-                      ),
+                      
+                      // Send Sequences Table
                       Expanded(
-                        child: Obx(() => ListView.builder(
-                          itemCount: controller.filteredCommands.length,
-                          itemBuilder: (context, index) {
-                            final cmd = controller.filteredCommands[index];
-                            return ListTile(
-                              dense: true,
-                              title: Text(cmd.name, style: const TextStyle(fontSize: 12)),
-                              leading: const Icon(Icons.send_outlined, size: 16),
-                              onTap: () => controller.selectPredefinedCommand(cmd),
-                            );
-                          },
-                        )),
+                        flex: 3,
+                        child: _buildSequenceTable(
+                          title: "Send Sequences",
+                          headerColumns: ["Send", "Name", "Sequence", ""],
+                          child: Obx(() => ListView.builder(
+                            itemCount: controller.filteredSendSequences.length,
+                            itemBuilder: (context, index) {
+                              final seq = controller.filteredSendSequences[index];
+                              final actualIndex = controller.sendSequences.indexOf(seq);
+                              return _buildSendSequenceRow(context, seq, actualIndex);
+                            },
+                          )),
+                        ),
+                      ),
+                      
+                      const Divider(height: 1, thickness: 1),
+                      
+                      // Receive Sequences Table
+                      Expanded(
+                        flex: 2,
+                        child: _buildSequenceTable(
+                          title: "Receive Sequences",
+                          headerColumns: ["Active", "Name", "Sequence", "Answer", ""],
+                          child: Obx(() => ListView.builder(
+                            itemCount: controller.filteredReceiveSequences.length,
+                            itemBuilder: (context, index) {
+                              final seq = controller.filteredReceiveSequences[index];
+                              final actualIndex = controller.receiveSequences.indexOf(seq);
+                              return _buildReceiveSequenceRow(context, seq, actualIndex);
+                            },
+                          )),
+                        ),
                       ),
                     ],
                   ),
@@ -234,9 +269,6 @@ class DashboardView extends GetView<BmsController> {
   }
 
   Widget _buildEditBar() {
-    final textController = TextEditingController();
-    
-    // Sync text controller with customInput
     return Container(
       padding: const EdgeInsets.all(8),
       decoration: BoxDecoration(
@@ -267,8 +299,6 @@ class DashboardView extends GetView<BmsController> {
             child: SizedBox(
               height: 35,
               child: Obx(() {
-                // We use a key to force rebuild when customInput changes from external (sidebar)
-                // but we also need to handle user typing.
                 return TextField(
                   key: ValueKey(controller.customInput.value),
                   controller: TextEditingController(text: controller.customInput.value)
@@ -304,6 +334,294 @@ class DashboardView extends GetView<BmsController> {
               minimumSize: const Size(80, 35),
             ),
             child: const Text("SEND"),
+          ),
+        ],
+      ),
+    );
+  }
+
+  Widget _buildSequenceTable({required String title, required List<String> headerColumns, required Widget child}) {
+    return Column(
+      children: [
+        Container(
+          padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+          width: double.infinity,
+          color: const Color(0xFFF0F0F0),
+          child: Text(title, style: const TextStyle(fontSize: 12, fontWeight: FontWeight.bold)),
+        ),
+        Container(
+          height: 25,
+          decoration: BoxDecoration(
+            color: const Color(0xFFE0E0E0),
+            border: Border(bottom: BorderSide(color: Colors.grey[300]!)),
+          ),
+          child: Row(
+            children: headerColumns.map((col) {
+              final isFirst = headerColumns.indexOf(col) == 0;
+              final isLast = headerColumns.indexOf(col) == headerColumns.length - 1;
+              return Expanded(
+                flex: isFirst ? 1 : (isLast ? 1 : 2),
+                child: Container(
+                  padding: const EdgeInsets.symmetric(horizontal: 4),
+                  decoration: BoxDecoration(
+                    border: Border(right: isLast ? BorderSide.none : BorderSide(color: Colors.grey[300]!)),
+                  ),
+                  alignment: Alignment.centerLeft,
+                  child: Text(col, style: const TextStyle(fontSize: 11, color: Colors.grey)),
+                ),
+              );
+            }).toList(),
+          ),
+        ),
+        Expanded(child: Container(color: Colors.white, child: child)),
+      ],
+    );
+  }
+
+  Widget _buildSendSequenceRow(BuildContext context, SendSequence seq, int index) {
+    return Obx(() {
+      final isSelected = controller.selectedSendIndex.value == index;
+      return InkWell(
+        onTap: () => controller.selectSequence(index),
+        child: Container(
+          height: 25,
+          decoration: BoxDecoration(
+            color: isSelected ? Colors.blue.withValues(alpha: 0.1) : Colors.transparent,
+            border: Border(bottom: BorderSide(color: Colors.grey[200]!)),
+          ),
+          child: Row(
+            children: [
+              Expanded(
+                flex: 1,
+                child: Container(
+                  alignment: Alignment.center,
+                  decoration: BoxDecoration(
+                    border: Border(right: BorderSide(color: Colors.grey[300]!)),
+                  ),
+                  child: const Icon(Icons.arrow_forward, size: 14, color: Colors.blue),
+                ),
+              ),
+              Expanded(
+                flex: 2,
+                child: Container(
+                  padding: const EdgeInsets.symmetric(horizontal: 4),
+                  decoration: BoxDecoration(
+                    border: Border(right: BorderSide(color: Colors.grey[300]!)),
+                  ),
+                  alignment: Alignment.centerLeft,
+                  child: Text(seq.name, style: const TextStyle(fontSize: 11), overflow: TextOverflow.ellipsis),
+                ),
+              ),
+              Expanded(
+                flex: 2,
+                child: Container(
+                  padding: const EdgeInsets.symmetric(horizontal: 4),
+                  alignment: Alignment.centerLeft,
+                  child: Text(seq.sequence, style: TextStyle(fontSize: 11, color: Colors.blue[900], fontWeight: FontWeight.bold), overflow: TextOverflow.ellipsis),
+                ),
+              ),
+              Expanded(
+                flex: 1,
+                child: Row(
+                  children: [
+                    IconButton(
+                      icon: const Icon(Icons.edit, size: 12),
+                      onPressed: () => _showEditSequenceDialog(context, index, isReceive: false),
+                      padding: EdgeInsets.zero,
+                      constraints: const BoxConstraints(),
+                    ),
+                    IconButton(
+                      icon: const Icon(Icons.delete, size: 12, color: Colors.red),
+                      onPressed: () => controller.removeSendSequence(index),
+                      padding: EdgeInsets.zero,
+                      constraints: const BoxConstraints(),
+                    ),
+                  ],
+                ),
+              ),
+            ],
+          ),
+        ),
+      );
+    });
+  }
+
+  Widget _buildReceiveSequenceRow(BuildContext context, ReceiveSequence seq, int index) {
+    return Container(
+      height: 25,
+      decoration: BoxDecoration(
+        border: Border(bottom: BorderSide(color: Colors.grey[200]!)),
+      ),
+      child: Row(
+        children: [
+          Expanded(
+            flex: 1,
+            child: Container(
+              alignment: Alignment.center,
+              decoration: BoxDecoration(
+                border: Border(right: BorderSide(color: Colors.grey[300]!)),
+              ),
+              child: Checkbox(
+                value: seq.isActive,
+                onChanged: (val) {
+                  seq.isActive = val ?? false;
+                  controller.receiveSequences.refresh();
+                  controller.saveSequences();
+                },
+                visualDensity: VisualDensity.compact,
+              ),
+            ),
+          ),
+          Expanded(
+            flex: 2,
+            child: Container(
+              padding: const EdgeInsets.symmetric(horizontal: 4),
+              decoration: BoxDecoration(
+                border: Border(right: BorderSide(color: Colors.grey[300]!)),
+              ),
+              alignment: Alignment.centerLeft,
+              child: Text(seq.name, style: const TextStyle(fontSize: 11), overflow: TextOverflow.ellipsis),
+            ),
+          ),
+          Expanded(
+            flex: 2,
+            child: Container(
+              padding: const EdgeInsets.symmetric(horizontal: 4),
+              decoration: BoxDecoration(
+                border: Border(right: BorderSide(color: Colors.grey[300]!)),
+              ),
+              alignment: Alignment.centerLeft,
+              child: Text(seq.sequence, style: TextStyle(fontSize: 11, color: Colors.blue[900], fontWeight: FontWeight.bold), overflow: TextOverflow.ellipsis),
+            ),
+          ),
+          Expanded(
+            flex: 1,
+            child: Container(
+              padding: const EdgeInsets.symmetric(horizontal: 4),
+              alignment: Alignment.centerLeft,
+              child: Text(seq.answer, style: const TextStyle(fontSize: 11), overflow: TextOverflow.ellipsis),
+            ),
+          ),
+          Expanded(
+            flex: 1,
+            child: Row(
+              children: [
+                IconButton(
+                  icon: const Icon(Icons.edit, size: 12),
+                  onPressed: () => _showEditSequenceDialog(context, index, isReceive: true),
+                  padding: EdgeInsets.zero,
+                  constraints: const BoxConstraints(),
+                ),
+                IconButton(
+                  icon: const Icon(Icons.delete, size: 12, color: Colors.red),
+                  onPressed: () => controller.removeReceiveSequence(index),
+                  padding: EdgeInsets.zero,
+                  constraints: const BoxConstraints(),
+                ),
+              ],
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
+  void _showAddSequenceDialog(BuildContext context) {
+    final nameCtrl = TextEditingController();
+    final seqCtrl = TextEditingController();
+    final ansCtrl = TextEditingController();
+    bool isReceive = false;
+
+    Get.dialog(
+      StatefulBuilder(
+        builder: (context, setState) => AlertDialog(
+          title: const Text("Add New Sequence"),
+          content: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              Row(
+                children: [
+                  const Text("Type: "),
+                  ChoiceChip(
+                    label: const Text("Send"),
+                    selected: !isReceive,
+                    onSelected: (val) => setState(() => isReceive = !val),
+                  ),
+                  const SizedBox(width: 8),
+                  ChoiceChip(
+                    label: const Text("Receive"),
+                    selected: isReceive,
+                    onSelected: (val) => setState(() => isReceive = val),
+                  ),
+                ],
+              ),
+              TextField(controller: nameCtrl, decoration: const InputDecoration(labelText: "Name")),
+              TextField(controller: seqCtrl, decoration: const InputDecoration(labelText: "Sequence (Hex/ASCII)")),
+              if (isReceive) TextField(controller: ansCtrl, decoration: const InputDecoration(labelText: "Answer (Optional)")),
+            ],
+          ),
+          actions: [
+            TextButton(onPressed: () => Get.back(), child: const Text("Cancel")),
+            ElevatedButton(
+              onPressed: () {
+                if (isReceive) {
+                  controller.addReceiveSequence(nameCtrl.text, seqCtrl.text, ansCtrl.text);
+                } else {
+                  controller.addSendSequence(nameCtrl.text, seqCtrl.text);
+                }
+                Get.back();
+              },
+              child: const Text("Add"),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+
+  void _showEditSequenceDialog(BuildContext context, int index, {required bool isReceive}) {
+    String initialName = "";
+    String initialSeq = "";
+    String initialAns = "";
+
+    if (isReceive) {
+      final seq = controller.receiveSequences[index];
+      initialName = seq.name;
+      initialSeq = seq.sequence;
+      initialAns = seq.answer;
+    } else {
+      final seq = controller.sendSequences[index];
+      initialName = seq.name;
+      initialSeq = seq.sequence;
+    }
+
+    final nameCtrl = TextEditingController(text: initialName);
+    final seqCtrl = TextEditingController(text: initialSeq);
+    final ansCtrl = TextEditingController(text: initialAns);
+
+    Get.dialog(
+      AlertDialog(
+        title: Text("Edit ${isReceive ? 'Receive' : 'Send'} Sequence"),
+        content: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            TextField(controller: nameCtrl, decoration: const InputDecoration(labelText: "Name")),
+            TextField(controller: seqCtrl, decoration: const InputDecoration(labelText: "Sequence")),
+            if (isReceive) TextField(controller: ansCtrl, decoration: const InputDecoration(labelText: "Answer")),
+          ],
+        ),
+        actions: [
+          TextButton(onPressed: () => Get.back(), child: const Text("Cancel")),
+          ElevatedButton(
+            onPressed: () {
+              if (isReceive) {
+                controller.updateReceiveSequence(index, nameCtrl.text, seqCtrl.text, ansCtrl.text);
+              } else {
+                controller.updateSendSequence(index, nameCtrl.text, seqCtrl.text);
+              }
+              Get.back();
+            },
+            child: const Text("Save"),
           ),
         ],
       ),

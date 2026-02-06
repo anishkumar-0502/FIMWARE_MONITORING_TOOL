@@ -1,20 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <CustomBuild Include="C:\Users\Kamali\Desktop\Anish\USRS485\build\windows\x64\CMakeFiles\fa427d0dd5b025cfab973b818feeaaac\flutter_windows.dll.rule">
+    <CustomBuild Include="C:\Users\Kamali\Desktop\Anish\FIMWARE_MONITORING_TOOL\build\windows\x64\CMakeFiles\352933a43318582d2aa0f2bc05df7d94\flutter_windows.dll.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\Users\Kamali\Desktop\Anish\USRS485\build\windows\x64\CMakeFiles\bc1d2a2dbecffb3e76e0f742693ff3d3\flutter_assemble.rule">
+    <CustomBuild Include="C:\Users\Kamali\Desktop\Anish\FIMWARE_MONITORING_TOOL\build\windows\x64\CMakeFiles\fbb00d72f836308317af8a5b2c4e2967\flutter_assemble.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\Users\Kamali\Desktop\Anish\USRS485\windows\flutter\CMakeLists.txt" />
+    <CustomBuild Include="C:\Users\Kamali\Desktop\Anish\FIMWARE_MONITORING_TOOL\windows\flutter\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="C:\Users\Kamali\Desktop\Anish\USRS485\build\windows\x64\flutter\CMakeFiles\flutter_assemble" />
+    <None Include="C:\Users\Kamali\Desktop\Anish\FIMWARE_MONITORING_TOOL\build\windows\x64\flutter\CMakeFiles\flutter_assemble" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="CMake Rules">
-      <UniqueIdentifier>{3E55FF30-6747-3AD5-83F1-2BD20D2B2095}</UniqueIdentifier>
+      <UniqueIdentifier>{C5E2871B-189E-331D-8A29-4A4D4BA07B40}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

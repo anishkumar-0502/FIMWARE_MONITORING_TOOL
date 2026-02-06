@@ -2,25 +2,25 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
-      <FullPath>C:\Users\Kamali\Desktop\Anish\USRS485\build\windows\x64\x64\Debug\ZERO_CHECK</FullPath>
+      <FullPath>C:\Users\Kamali\Desktop\Anish\FIMWARE_MONITORING_TOOL\build\windows\x64\x64\Debug\ZERO_CHECK</FullPath>
     </ProjectOutput>
     <ProjectOutput>
-      <FullPath>C:\Users\Kamali\Desktop\Anish\USRS485\build\windows\x64\flutter\x64\Debug\flutter_assemble</FullPath>
+      <FullPath>C:\Users\Kamali\Desktop\Anish\FIMWARE_MONITORING_TOOL\build\windows\x64\flutter\x64\Debug\flutter_assemble</FullPath>
     </ProjectOutput>
     <ProjectOutput>
-      <FullPath>C:\Users\Kamali\Desktop\Anish\USRS485\build\windows\x64\plugins\flutter_libserialport\Debug\flutter_libserialport_plugin.dll</FullPath>
+      <FullPath>C:\Users\Kamali\Desktop\Anish\FIMWARE_MONITORING_TOOL\build\windows\x64\plugins\flutter_libserialport\Debug\flutter_libserialport_plugin.dll</FullPath>
     </ProjectOutput>
     <ProjectOutput>
-      <FullPath>C:\Users\Kamali\Desktop\Anish\USRS485\build\windows\x64\runner\Debug\OutLight.exe</FullPath>
+      <FullPath>C:\Users\Kamali\Desktop\Anish\FIMWARE_MONITORING_TOOL\build\windows\x64\runner\Debug\OutLight.exe</FullPath>
     </ProjectOutput>
     <ProjectOutput>
-      <FullPath>C:\Users\Kamali\Desktop\Anish\USRS485\build\windows\x64\plugins\flutter_libserialport\libserialport\Debug\serialport.dll</FullPath>
+      <FullPath>C:\Users\Kamali\Desktop\Anish\FIMWARE_MONITORING_TOOL\build\windows\x64\plugins\flutter_libserialport\libserialport\Debug\serialport.dll</FullPath>
     </ProjectOutput>
     <ProjectOutput>
-      <FullPath>C:\Users\Kamali\Desktop\Anish\USRS485\build\windows\x64\x64\Debug\ALL_BUILD</FullPath>
+      <FullPath>C:\Users\Kamali\Desktop\Anish\FIMWARE_MONITORING_TOOL\build\windows\x64\x64\Debug\ALL_BUILD</FullPath>
     </ProjectOutput>
     <ProjectOutput>
-      <FullPath>C:\Users\Kamali\Desktop\Anish\USRS485\build\windows\x64\x64\Debug\INSTALL</FullPath>
+      <FullPath>C:\Users\Kamali\Desktop\Anish\FIMWARE_MONITORING_TOOL\build\windows\x64\x64\Debug\INSTALL</FullPath>
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles />

@@ -1,28 +1,28 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="C:\Users\Kamali\Desktop\Anish\USRS485\windows\flutter\ephemeral\cpp_client_wrapper\core_implementations.cc">
+    <ClCompile Include="C:\Users\Kamali\Desktop\Anish\FIMWARE_MONITORING_TOOL\windows\flutter\ephemeral\cpp_client_wrapper\core_implementations.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Kamali\Desktop\Anish\USRS485\windows\flutter\ephemeral\cpp_client_wrapper\standard_codec.cc">
+    <ClCompile Include="C:\Users\Kamali\Desktop\Anish\FIMWARE_MONITORING_TOOL\windows\flutter\ephemeral\cpp_client_wrapper\standard_codec.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Kamali\Desktop\Anish\USRS485\windows\flutter\ephemeral\cpp_client_wrapper\flutter_engine.cc">
+    <ClCompile Include="C:\Users\Kamali\Desktop\Anish\FIMWARE_MONITORING_TOOL\windows\flutter\ephemeral\cpp_client_wrapper\flutter_engine.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Kamali\Desktop\Anish\USRS485\windows\flutter\ephemeral\cpp_client_wrapper\flutter_view_controller.cc">
+    <ClCompile Include="C:\Users\Kamali\Desktop\Anish\FIMWARE_MONITORING_TOOL\windows\flutter\ephemeral\cpp_client_wrapper\flutter_view_controller.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\Kamali\Desktop\Anish\USRS485\windows\flutter\CMakeLists.txt" />
+    <CustomBuild Include="C:\Users\Kamali\Desktop\Anish\FIMWARE_MONITORING_TOOL\windows\flutter\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="CMake Rules">
-      <UniqueIdentifier>{3E55FF30-6747-3AD5-83F1-2BD20D2B2095}</UniqueIdentifier>
+      <UniqueIdentifier>{C5E2871B-189E-331D-8A29-4A4D4BA07B40}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files">
-      <UniqueIdentifier>{960377EF-F50F-34FF-9782-EA0C17D8499A}</UniqueIdentifier>
+      <UniqueIdentifier>{1EE6F6D0-AD4A-3C5E-AFBD-7E7C8E30C7FC}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

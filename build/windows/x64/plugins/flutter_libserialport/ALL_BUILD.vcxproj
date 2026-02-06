@@ -21,7 +21,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{47E8E496-B7A1-3076-8C05-92E64659AEAD}</ProjectGuid>
+    <ProjectGuid>{BBD5F3D2-94C8-3B38-B087-7D749A20E02A}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
     <Platform>x64</Platform>
@@ -88,11 +88,11 @@
     </Midl>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\Kamali\Desktop\Anish\USRS485\windows\flutter\ephemeral\.plugin_symlinks\flutter_libserialport\windows\CMakeLists.txt">
+    <CustomBuild Include="C:\Users\Kamali\Desktop\Anish\FIMWARE_MONITORING_TOOL\windows\flutter\ephemeral\.plugin_symlinks\flutter_libserialport\windows\CMakeLists.txt">
       <UseUtf8Encoding>Always</UseUtf8Encoding>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/Kamali/Desktop/Anish/USRS485/windows/flutter/ephemeral/.plugin_symlinks/flutter_libserialport/windows/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/Kamali/Desktop/Anish/FIMWARE_MONITORING_TOOL/windows/flutter/ephemeral/.plugin_symlinks/flutter_libserialport/windows/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/Kamali/Desktop/Anish/USRS485/windows -BC:/Users/Kamali/Desktop/Anish/USRS485/build/windows/x64 --check-stamp-file C:/Users/Kamali/Desktop/Anish/USRS485/build/windows/x64/plugins/flutter_libserialport/CMakeFiles/generate.stamp
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/Kamali/Desktop/Anish/FIMWARE_MONITORING_TOOL/windows -BC:/Users/Kamali/Desktop/Anish/FIMWARE_MONITORING_TOOL/build/windows/x64 --check-stamp-file C:/Users/Kamali/Desktop/Anish/FIMWARE_MONITORING_TOOL/build/windows/x64/plugins/flutter_libserialport/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -101,11 +101,11 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Kamali\Desktop\Anish\USRS485\build\windows\x64\plugins\flutter_libserialport\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Kamali\Desktop\Anish\FIMWARE_MONITORING_TOOL\build\windows\x64\plugins\flutter_libserialport\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">Building Custom Rule C:/Users/Kamali/Desktop/Anish/USRS485/windows/flutter/ephemeral/.plugin_symlinks/flutter_libserialport/windows/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">Building Custom Rule C:/Users/Kamali/Desktop/Anish/FIMWARE_MONITORING_TOOL/windows/flutter/ephemeral/.plugin_symlinks/flutter_libserialport/windows/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">setlocal
-"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/Kamali/Desktop/Anish/USRS485/windows -BC:/Users/Kamali/Desktop/Anish/USRS485/build/windows/x64 --check-stamp-file C:/Users/Kamali/Desktop/Anish/USRS485/build/windows/x64/plugins/flutter_libserialport/CMakeFiles/generate.stamp
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/Kamali/Desktop/Anish/FIMWARE_MONITORING_TOOL/windows -BC:/Users/Kamali/Desktop/Anish/FIMWARE_MONITORING_TOOL/build/windows/x64 --check-stamp-file C:/Users/Kamali/Desktop/Anish/FIMWARE_MONITORING_TOOL/build/windows/x64/plugins/flutter_libserialport/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -114,11 +114,11 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">C:\Users\Kamali\Desktop\Anish\USRS485\build\windows\x64\plugins\flutter_libserialport\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">C:\Users\Kamali\Desktop\Anish\FIMWARE_MONITORING_TOOL\build\windows\x64\plugins\flutter_libserialport\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/Kamali/Desktop/Anish/USRS485/windows/flutter/ephemeral/.plugin_symlinks/flutter_libserialport/windows/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/Kamali/Desktop/Anish/FIMWARE_MONITORING_TOOL/windows/flutter/ephemeral/.plugin_symlinks/flutter_libserialport/windows/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
-"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/Kamali/Desktop/Anish/USRS485/windows -BC:/Users/Kamali/Desktop/Anish/USRS485/build/windows/x64 --check-stamp-file C:/Users/Kamali/Desktop/Anish/USRS485/build/windows/x64/plugins/flutter_libserialport/CMakeFiles/generate.stamp
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/Kamali/Desktop/Anish/FIMWARE_MONITORING_TOOL/windows -BC:/Users/Kamali/Desktop/Anish/FIMWARE_MONITORING_TOOL/build/windows/x64 --check-stamp-file C:/Users/Kamali/Desktop/Anish/FIMWARE_MONITORING_TOOL/build/windows/x64/plugins/flutter_libserialport/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -127,7 +127,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Kamali\Desktop\Anish\USRS485\build\windows\x64\plugins\flutter_libserialport\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Kamali\Desktop\Anish\FIMWARE_MONITORING_TOOL\build\windows\x64\plugins\flutter_libserialport\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
@@ -135,18 +135,18 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
-    <ProjectReference Include="C:\Users\Kamali\Desktop\Anish\USRS485\build\windows\x64\ZERO_CHECK.vcxproj">
-      <Project>{E6B454D0-B00B-305A-9219-C6CC01F550A2}</Project>
+    <ProjectReference Include="C:\Users\Kamali\Desktop\Anish\FIMWARE_MONITORING_TOOL\build\windows\x64\ZERO_CHECK.vcxproj">
+      <Project>{0E3CD07B-2627-359D-8BCC-712260C36BBF}</Project>
       <Name>ZERO_CHECK</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </ProjectReference>
-    <ProjectReference Include="C:\Users\Kamali\Desktop\Anish\USRS485\build\windows\x64\plugins\flutter_libserialport\flutter_libserialport_plugin.vcxproj">
-      <Project>{3E781B6D-B155-3E17-8D89-D5690F6C97DB}</Project>
+    <ProjectReference Include="C:\Users\Kamali\Desktop\Anish\FIMWARE_MONITORING_TOOL\build\windows\x64\plugins\flutter_libserialport\flutter_libserialport_plugin.vcxproj">
+      <Project>{E5A8F19C-D03E-364F-B82F-D67550FCBDF8}</Project>
       <Name>flutter_libserialport_plugin</Name>
     </ProjectReference>
-    <ProjectReference Include="C:\Users\Kamali\Desktop\Anish\USRS485\build\windows\x64\plugins\flutter_libserialport\libserialport\serialport.vcxproj">
-      <Project>{0BFB13DC-D096-384C-8137-D1474CE788FE}</Project>
+    <ProjectReference Include="C:\Users\Kamali\Desktop\Anish\FIMWARE_MONITORING_TOOL\build\windows\x64\plugins\flutter_libserialport\libserialport\serialport.vcxproj">
+      <Project>{212E64B0-E9D6-3380-BF0E-411B5697B59B}</Project>
       <Name>serialport</Name>
     </ProjectReference>
   </ItemGroup>

@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/Kamali/Desktop/Anish/USRS485/windows
+# Install script for directory: C:/Users/Kamali/Desktop/Anish/FIMWARE_MONITORING_TOOL/windows
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,160 +34,160 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/Kamali/Desktop/Anish/USRS485/build/windows/x64/flutter/cmake_install.cmake")
+  include("C:/Users/Kamali/Desktop/Anish/FIMWARE_MONITORING_TOOL/build/windows/x64/flutter/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/Kamali/Desktop/Anish/USRS485/build/windows/x64/runner/cmake_install.cmake")
+  include("C:/Users/Kamali/Desktop/Anish/FIMWARE_MONITORING_TOOL/build/windows/x64/runner/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/Kamali/Desktop/Anish/USRS485/build/windows/x64/plugins/flutter_libserialport/cmake_install.cmake")
+  include("C:/Users/Kamali/Desktop/Anish/FIMWARE_MONITORING_TOOL/build/windows/x64/plugins/flutter_libserialport/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Runtime" OR NOT CMAKE_INSTALL_COMPONENT)
   if(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Dd][Ee][Bb][Uu][Gg])$")
     list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-     "C:/Users/Kamali/Desktop/Anish/USRS485/build/windows/x64/runner/Debug/OutLight.exe")
+     "C:/Users/Kamali/Desktop/Anish/FIMWARE_MONITORING_TOOL/build/windows/x64/runner/Debug/OutLight.exe")
     if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
       message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
     endif()
     if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
       message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
     endif()
-    file(INSTALL DESTINATION "C:/Users/Kamali/Desktop/Anish/USRS485/build/windows/x64/runner/Debug" TYPE EXECUTABLE FILES "C:/Users/Kamali/Desktop/Anish/USRS485/build/windows/x64/runner/Debug/OutLight.exe")
+    file(INSTALL DESTINATION "C:/Users/Kamali/Desktop/Anish/FIMWARE_MONITORING_TOOL/build/windows/x64/runner/Debug" TYPE EXECUTABLE FILES "C:/Users/Kamali/Desktop/Anish/FIMWARE_MONITORING_TOOL/build/windows/x64/runner/Debug/OutLight.exe")
   elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Pp][Rr][Oo][Ff][Ii][Ll][Ee])$")
     list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-     "C:/Users/Kamali/Desktop/Anish/USRS485/build/windows/x64/runner/Profile/OutLight.exe")
+     "C:/Users/Kamali/Desktop/Anish/FIMWARE_MONITORING_TOOL/build/windows/x64/runner/Profile/OutLight.exe")
     if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
       message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
     endif()
     if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
       message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
     endif()
-    file(INSTALL DESTINATION "C:/Users/Kamali/Desktop/Anish/USRS485/build/windows/x64/runner/Profile" TYPE EXECUTABLE FILES "C:/Users/Kamali/Desktop/Anish/USRS485/build/windows/x64/runner/Profile/OutLight.exe")
+    file(INSTALL DESTINATION "C:/Users/Kamali/Desktop/Anish/FIMWARE_MONITORING_TOOL/build/windows/x64/runner/Profile" TYPE EXECUTABLE FILES "C:/Users/Kamali/Desktop/Anish/FIMWARE_MONITORING_TOOL/build/windows/x64/runner/Profile/OutLight.exe")
   elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
     list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-     "C:/Users/Kamali/Desktop/Anish/USRS485/build/windows/x64/runner/Release/OutLight.exe")
+     "C:/Users/Kamali/Desktop/Anish/FIMWARE_MONITORING_TOOL/build/windows/x64/runner/Release/OutLight.exe")
     if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
       message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
     endif()
     if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
       message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
     endif()
-    file(INSTALL DESTINATION "C:/Users/Kamali/Desktop/Anish/USRS485/build/windows/x64/runner/Release" TYPE EXECUTABLE FILES "C:/Users/Kamali/Desktop/Anish/USRS485/build/windows/x64/runner/Release/OutLight.exe")
+    file(INSTALL DESTINATION "C:/Users/Kamali/Desktop/Anish/FIMWARE_MONITORING_TOOL/build/windows/x64/runner/Release" TYPE EXECUTABLE FILES "C:/Users/Kamali/Desktop/Anish/FIMWARE_MONITORING_TOOL/build/windows/x64/runner/Release/OutLight.exe")
   endif()
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Runtime" OR NOT CMAKE_INSTALL_COMPONENT)
   if(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Dd][Ee][Bb][Uu][Gg])$")
     list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-     "C:/Users/Kamali/Desktop/Anish/USRS485/build/windows/x64/runner/Debug/data/icudtl.dat")
+     "C:/Users/Kamali/Desktop/Anish/FIMWARE_MONITORING_TOOL/build/windows/x64/runner/Debug/data/icudtl.dat")
     if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
       message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
     endif()
     if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
       message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
     endif()
-    file(INSTALL DESTINATION "C:/Users/Kamali/Desktop/Anish/USRS485/build/windows/x64/runner/Debug/data" TYPE FILE FILES "C:/Users/Kamali/Desktop/Anish/USRS485/windows/flutter/ephemeral/icudtl.dat")
+    file(INSTALL DESTINATION "C:/Users/Kamali/Desktop/Anish/FIMWARE_MONITORING_TOOL/build/windows/x64/runner/Debug/data" TYPE FILE FILES "C:/Users/Kamali/Desktop/Anish/FIMWARE_MONITORING_TOOL/windows/flutter/ephemeral/icudtl.dat")
   elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Pp][Rr][Oo][Ff][Ii][Ll][Ee])$")
     list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-     "C:/Users/Kamali/Desktop/Anish/USRS485/build/windows/x64/runner/Profile/data/icudtl.dat")
+     "C:/Users/Kamali/Desktop/Anish/FIMWARE_MONITORING_TOOL/build/windows/x64/runner/Profile/data/icudtl.dat")
     if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
       message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
     endif()
     if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
       message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
     endif()
-    file(INSTALL DESTINATION "C:/Users/Kamali/Desktop/Anish/USRS485/build/windows/x64/runner/Profile/data" TYPE FILE FILES "C:/Users/Kamali/Desktop/Anish/USRS485/windows/flutter/ephemeral/icudtl.dat")
+    file(INSTALL DESTINATION "C:/Users/Kamali/Desktop/Anish/FIMWARE_MONITORING_TOOL/build/windows/x64/runner/Profile/data" TYPE FILE FILES "C:/Users/Kamali/Desktop/Anish/FIMWARE_MONITORING_TOOL/windows/flutter/ephemeral/icudtl.dat")
   elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
     list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-     "C:/Users/Kamali/Desktop/Anish/USRS485/build/windows/x64/runner/Release/data/icudtl.dat")
+     "C:/Users/Kamali/Desktop/Anish/FIMWARE_MONITORING_TOOL/build/windows/x64/runner/Release/data/icudtl.dat")
     if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
       message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
     endif()
     if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
       message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
     endif()
-    file(INSTALL DESTINATION "C:/Users/Kamali/Desktop/Anish/USRS485/build/windows/x64/runner/Release/data" TYPE FILE FILES "C:/Users/Kamali/Desktop/Anish/USRS485/windows/flutter/ephemeral/icudtl.dat")
+    file(INSTALL DESTINATION "C:/Users/Kamali/Desktop/Anish/FIMWARE_MONITORING_TOOL/build/windows/x64/runner/Release/data" TYPE FILE FILES "C:/Users/Kamali/Desktop/Anish/FIMWARE_MONITORING_TOOL/windows/flutter/ephemeral/icudtl.dat")
   endif()
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Runtime" OR NOT CMAKE_INSTALL_COMPONENT)
   if(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Dd][Ee][Bb][Uu][Gg])$")
     list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-     "C:/Users/Kamali/Desktop/Anish/USRS485/build/windows/x64/runner/Debug/flutter_windows.dll")
+     "C:/Users/Kamali/Desktop/Anish/FIMWARE_MONITORING_TOOL/build/windows/x64/runner/Debug/flutter_windows.dll")
     if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
       message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
     endif()
     if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
       message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
     endif()
-    file(INSTALL DESTINATION "C:/Users/Kamali/Desktop/Anish/USRS485/build/windows/x64/runner/Debug" TYPE FILE FILES "C:/Users/Kamali/Desktop/Anish/USRS485/windows/flutter/ephemeral/flutter_windows.dll")
+    file(INSTALL DESTINATION "C:/Users/Kamali/Desktop/Anish/FIMWARE_MONITORING_TOOL/build/windows/x64/runner/Debug" TYPE FILE FILES "C:/Users/Kamali/Desktop/Anish/FIMWARE_MONITORING_TOOL/windows/flutter/ephemeral/flutter_windows.dll")
   elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Pp][Rr][Oo][Ff][Ii][Ll][Ee])$")
     list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-     "C:/Users/Kamali/Desktop/Anish/USRS485/build/windows/x64/runner/Profile/flutter_windows.dll")
+     "C:/Users/Kamali/Desktop/Anish/FIMWARE_MONITORING_TOOL/build/windows/x64/runner/Profile/flutter_windows.dll")
     if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
       message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
     endif()
     if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
       message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
     endif()
-    file(INSTALL DESTINATION "C:/Users/Kamali/Desktop/Anish/USRS485/build/windows/x64/runner/Profile" TYPE FILE FILES "C:/Users/Kamali/Desktop/Anish/USRS485/windows/flutter/ephemeral/flutter_windows.dll")
+    file(INSTALL DESTINATION "C:/Users/Kamali/Desktop/Anish/FIMWARE_MONITORING_TOOL/build/windows/x64/runner/Profile" TYPE FILE FILES "C:/Users/Kamali/Desktop/Anish/FIMWARE_MONITORING_TOOL/windows/flutter/ephemeral/flutter_windows.dll")
   elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
     list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-     "C:/Users/Kamali/Desktop/Anish/USRS485/build/windows/x64/runner/Release/flutter_windows.dll")
+     "C:/Users/Kamali/Desktop/Anish/FIMWARE_MONITORING_TOOL/build/windows/x64/runner/Release/flutter_windows.dll")
     if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
       message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
     endif()
     if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
       message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
     endif()
-    file(INSTALL DESTINATION "C:/Users/Kamali/Desktop/Anish/USRS485/build/windows/x64/runner/Release" TYPE FILE FILES "C:/Users/Kamali/Desktop/Anish/USRS485/windows/flutter/ephemeral/flutter_windows.dll")
+    file(INSTALL DESTINATION "C:/Users/Kamali/Desktop/Anish/FIMWARE_MONITORING_TOOL/build/windows/x64/runner/Release" TYPE FILE FILES "C:/Users/Kamali/Desktop/Anish/FIMWARE_MONITORING_TOOL/windows/flutter/ephemeral/flutter_windows.dll")
   endif()
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Runtime" OR NOT CMAKE_INSTALL_COMPONENT)
   if(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Dd][Ee][Bb][Uu][Gg])$")
     list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-     "C:/Users/Kamali/Desktop/Anish/USRS485/build/windows/x64/runner/Debug/flutter_libserialport_plugin.dll;C:/Users/Kamali/Desktop/Anish/USRS485/build/windows/x64/runner/Debug/serialport.dll")
+     "C:/Users/Kamali/Desktop/Anish/FIMWARE_MONITORING_TOOL/build/windows/x64/runner/Debug/flutter_libserialport_plugin.dll;C:/Users/Kamali/Desktop/Anish/FIMWARE_MONITORING_TOOL/build/windows/x64/runner/Debug/serialport.dll")
     if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
       message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
     endif()
     if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
       message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
     endif()
-    file(INSTALL DESTINATION "C:/Users/Kamali/Desktop/Anish/USRS485/build/windows/x64/runner/Debug" TYPE FILE FILES
-      "C:/Users/Kamali/Desktop/Anish/USRS485/build/windows/x64/plugins/flutter_libserialport/Debug/flutter_libserialport_plugin.dll"
-      "C:/Users/Kamali/Desktop/Anish/USRS485/build/windows/x64/plugins/flutter_libserialport/libserialport/Debug/serialport.dll"
+    file(INSTALL DESTINATION "C:/Users/Kamali/Desktop/Anish/FIMWARE_MONITORING_TOOL/build/windows/x64/runner/Debug" TYPE FILE FILES
+      "C:/Users/Kamali/Desktop/Anish/FIMWARE_MONITORING_TOOL/build/windows/x64/plugins/flutter_libserialport/Debug/flutter_libserialport_plugin.dll"
+      "C:/Users/Kamali/Desktop/Anish/FIMWARE_MONITORING_TOOL/build/windows/x64/plugins/flutter_libserialport/libserialport/Debug/serialport.dll"
       )
   elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Pp][Rr][Oo][Ff][Ii][Ll][Ee])$")
     list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-     "C:/Users/Kamali/Desktop/Anish/USRS485/build/windows/x64/runner/Profile/flutter_libserialport_plugin.dll;C:/Users/Kamali/Desktop/Anish/USRS485/build/windows/x64/runner/Profile/serialport.dll")
+     "C:/Users/Kamali/Desktop/Anish/FIMWARE_MONITORING_TOOL/build/windows/x64/runner/Profile/flutter_libserialport_plugin.dll;C:/Users/Kamali/Desktop/Anish/FIMWARE_MONITORING_TOOL/build/windows/x64/runner/Profile/serialport.dll")
     if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
       message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
     endif()
     if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
       message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
     endif()
-    file(INSTALL DESTINATION "C:/Users/Kamali/Desktop/Anish/USRS485/build/windows/x64/runner/Profile" TYPE FILE FILES
-      "C:/Users/Kamali/Desktop/Anish/USRS485/build/windows/x64/plugins/flutter_libserialport/Profile/flutter_libserialport_plugin.dll"
-      "C:/Users/Kamali/Desktop/Anish/USRS485/build/windows/x64/plugins/flutter_libserialport/libserialport/Profile/serialport.dll"
+    file(INSTALL DESTINATION "C:/Users/Kamali/Desktop/Anish/FIMWARE_MONITORING_TOOL/build/windows/x64/runner/Profile" TYPE FILE FILES
+      "C:/Users/Kamali/Desktop/Anish/FIMWARE_MONITORING_TOOL/build/windows/x64/plugins/flutter_libserialport/Profile/flutter_libserialport_plugin.dll"
+      "C:/Users/Kamali/Desktop/Anish/FIMWARE_MONITORING_TOOL/build/windows/x64/plugins/flutter_libserialport/libserialport/Profile/serialport.dll"
       )
   elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
     list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-     "C:/Users/Kamali/Desktop/Anish/USRS485/build/windows/x64/runner/Release/flutter_libserialport_plugin.dll;C:/Users/Kamali/Desktop/Anish/USRS485/build/windows/x64/runner/Release/serialport.dll")
+     "C:/Users/Kamali/Desktop/Anish/FIMWARE_MONITORING_TOOL/build/windows/x64/runner/Release/flutter_libserialport_plugin.dll;C:/Users/Kamali/Desktop/Anish/FIMWARE_MONITORING_TOOL/build/windows/x64/runner/Release/serialport.dll")
     if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
       message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
     endif()
     if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
       message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
     endif()
-    file(INSTALL DESTINATION "C:/Users/Kamali/Desktop/Anish/USRS485/build/windows/x64/runner/Release" TYPE FILE FILES
-      "C:/Users/Kamali/Desktop/Anish/USRS485/build/windows/x64/plugins/flutter_libserialport/Release/flutter_libserialport_plugin.dll"
-      "C:/Users/Kamali/Desktop/Anish/USRS485/build/windows/x64/plugins/flutter_libserialport/libserialport/Release/serialport.dll"
+    file(INSTALL DESTINATION "C:/Users/Kamali/Desktop/Anish/FIMWARE_MONITORING_TOOL/build/windows/x64/runner/Release" TYPE FILE FILES
+      "C:/Users/Kamali/Desktop/Anish/FIMWARE_MONITORING_TOOL/build/windows/x64/plugins/flutter_libserialport/Release/flutter_libserialport_plugin.dll"
+      "C:/Users/Kamali/Desktop/Anish/FIMWARE_MONITORING_TOOL/build/windows/x64/plugins/flutter_libserialport/libserialport/Release/serialport.dll"
       )
   endif()
 endif()
@@ -195,49 +195,49 @@ endif()
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Runtime" OR NOT CMAKE_INSTALL_COMPONENT)
   if(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Dd][Ee][Bb][Uu][Gg])$")
     list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-     "C:/Users/Kamali/Desktop/Anish/USRS485/build/windows/x64/runner/Debug/")
+     "C:/Users/Kamali/Desktop/Anish/FIMWARE_MONITORING_TOOL/build/windows/x64/runner/Debug/")
     if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
       message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
     endif()
     if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
       message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
     endif()
-    file(INSTALL DESTINATION "C:/Users/Kamali/Desktop/Anish/USRS485/build/windows/x64/runner/Debug" TYPE DIRECTORY FILES "C:/Users/Kamali/Desktop/Anish/USRS485/build/native_assets/windows/")
+    file(INSTALL DESTINATION "C:/Users/Kamali/Desktop/Anish/FIMWARE_MONITORING_TOOL/build/windows/x64/runner/Debug" TYPE DIRECTORY FILES "C:/Users/Kamali/Desktop/Anish/FIMWARE_MONITORING_TOOL/build/native_assets/windows/")
   elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Pp][Rr][Oo][Ff][Ii][Ll][Ee])$")
     list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-     "C:/Users/Kamali/Desktop/Anish/USRS485/build/windows/x64/runner/Profile/")
+     "C:/Users/Kamali/Desktop/Anish/FIMWARE_MONITORING_TOOL/build/windows/x64/runner/Profile/")
     if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
       message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
     endif()
     if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
       message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
     endif()
-    file(INSTALL DESTINATION "C:/Users/Kamali/Desktop/Anish/USRS485/build/windows/x64/runner/Profile" TYPE DIRECTORY FILES "C:/Users/Kamali/Desktop/Anish/USRS485/build/native_assets/windows/")
+    file(INSTALL DESTINATION "C:/Users/Kamali/Desktop/Anish/FIMWARE_MONITORING_TOOL/build/windows/x64/runner/Profile" TYPE DIRECTORY FILES "C:/Users/Kamali/Desktop/Anish/FIMWARE_MONITORING_TOOL/build/native_assets/windows/")
   elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
     list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-     "C:/Users/Kamali/Desktop/Anish/USRS485/build/windows/x64/runner/Release/")
+     "C:/Users/Kamali/Desktop/Anish/FIMWARE_MONITORING_TOOL/build/windows/x64/runner/Release/")
     if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
       message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
     endif()
     if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
       message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
     endif()
-    file(INSTALL DESTINATION "C:/Users/Kamali/Desktop/Anish/USRS485/build/windows/x64/runner/Release" TYPE DIRECTORY FILES "C:/Users/Kamali/Desktop/Anish/USRS485/build/native_assets/windows/")
+    file(INSTALL DESTINATION "C:/Users/Kamali/Desktop/Anish/FIMWARE_MONITORING_TOOL/build/windows/x64/runner/Release" TYPE DIRECTORY FILES "C:/Users/Kamali/Desktop/Anish/FIMWARE_MONITORING_TOOL/build/native_assets/windows/")
   endif()
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Runtime" OR NOT CMAKE_INSTALL_COMPONENT)
   if(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Dd][Ee][Bb][Uu][Gg])$")
     
-  file(REMOVE_RECURSE "C:/Users/Kamali/Desktop/Anish/USRS485/build/windows/x64/runner/Debug/data/flutter_assets")
+  file(REMOVE_RECURSE "C:/Users/Kamali/Desktop/Anish/FIMWARE_MONITORING_TOOL/build/windows/x64/runner/Debug/data/flutter_assets")
   
   elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Pp][Rr][Oo][Ff][Ii][Ll][Ee])$")
     
-  file(REMOVE_RECURSE "C:/Users/Kamali/Desktop/Anish/USRS485/build/windows/x64/runner/Profile/data/flutter_assets")
+  file(REMOVE_RECURSE "C:/Users/Kamali/Desktop/Anish/FIMWARE_MONITORING_TOOL/build/windows/x64/runner/Profile/data/flutter_assets")
   
   elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
     
-  file(REMOVE_RECURSE "C:/Users/Kamali/Desktop/Anish/USRS485/build/windows/x64/runner/Release/data/flutter_assets")
+  file(REMOVE_RECURSE "C:/Users/Kamali/Desktop/Anish/FIMWARE_MONITORING_TOOL/build/windows/x64/runner/Release/data/flutter_assets")
   
   endif()
 endif()
@@ -245,65 +245,65 @@ endif()
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Runtime" OR NOT CMAKE_INSTALL_COMPONENT)
   if(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Dd][Ee][Bb][Uu][Gg])$")
     list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-     "C:/Users/Kamali/Desktop/Anish/USRS485/build/windows/x64/runner/Debug/data/flutter_assets")
+     "C:/Users/Kamali/Desktop/Anish/FIMWARE_MONITORING_TOOL/build/windows/x64/runner/Debug/data/flutter_assets")
     if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
       message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
     endif()
     if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
       message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
     endif()
-    file(INSTALL DESTINATION "C:/Users/Kamali/Desktop/Anish/USRS485/build/windows/x64/runner/Debug/data" TYPE DIRECTORY FILES "C:/Users/Kamali/Desktop/Anish/USRS485/build//flutter_assets")
+    file(INSTALL DESTINATION "C:/Users/Kamali/Desktop/Anish/FIMWARE_MONITORING_TOOL/build/windows/x64/runner/Debug/data" TYPE DIRECTORY FILES "C:/Users/Kamali/Desktop/Anish/FIMWARE_MONITORING_TOOL/build//flutter_assets")
   elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Pp][Rr][Oo][Ff][Ii][Ll][Ee])$")
     list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-     "C:/Users/Kamali/Desktop/Anish/USRS485/build/windows/x64/runner/Profile/data/flutter_assets")
+     "C:/Users/Kamali/Desktop/Anish/FIMWARE_MONITORING_TOOL/build/windows/x64/runner/Profile/data/flutter_assets")
     if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
       message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
     endif()
     if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
       message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
     endif()
-    file(INSTALL DESTINATION "C:/Users/Kamali/Desktop/Anish/USRS485/build/windows/x64/runner/Profile/data" TYPE DIRECTORY FILES "C:/Users/Kamali/Desktop/Anish/USRS485/build//flutter_assets")
+    file(INSTALL DESTINATION "C:/Users/Kamali/Desktop/Anish/FIMWARE_MONITORING_TOOL/build/windows/x64/runner/Profile/data" TYPE DIRECTORY FILES "C:/Users/Kamali/Desktop/Anish/FIMWARE_MONITORING_TOOL/build//flutter_assets")
   elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
     list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-     "C:/Users/Kamali/Desktop/Anish/USRS485/build/windows/x64/runner/Release/data/flutter_assets")
+     "C:/Users/Kamali/Desktop/Anish/FIMWARE_MONITORING_TOOL/build/windows/x64/runner/Release/data/flutter_assets")
     if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
       message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
     endif()
     if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
       message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
     endif()
-    file(INSTALL DESTINATION "C:/Users/Kamali/Desktop/Anish/USRS485/build/windows/x64/runner/Release/data" TYPE DIRECTORY FILES "C:/Users/Kamali/Desktop/Anish/USRS485/build//flutter_assets")
+    file(INSTALL DESTINATION "C:/Users/Kamali/Desktop/Anish/FIMWARE_MONITORING_TOOL/build/windows/x64/runner/Release/data" TYPE DIRECTORY FILES "C:/Users/Kamali/Desktop/Anish/FIMWARE_MONITORING_TOOL/build//flutter_assets")
   endif()
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Runtime" OR NOT CMAKE_INSTALL_COMPONENT)
   if(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Pp][Rr][Oo][Ff][Ii][Ll][Ee])$")
     list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-     "C:/Users/Kamali/Desktop/Anish/USRS485/build/windows/x64/runner/Profile/data/app.so")
+     "C:/Users/Kamali/Desktop/Anish/FIMWARE_MONITORING_TOOL/build/windows/x64/runner/Profile/data/app.so")
     if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
       message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
     endif()
     if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
       message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
     endif()
-    file(INSTALL DESTINATION "C:/Users/Kamali/Desktop/Anish/USRS485/build/windows/x64/runner/Profile/data" TYPE FILE FILES "C:/Users/Kamali/Desktop/Anish/USRS485/build/windows/app.so")
+    file(INSTALL DESTINATION "C:/Users/Kamali/Desktop/Anish/FIMWARE_MONITORING_TOOL/build/windows/x64/runner/Profile/data" TYPE FILE FILES "C:/Users/Kamali/Desktop/Anish/FIMWARE_MONITORING_TOOL/build/windows/app.so")
   elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
     list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-     "C:/Users/Kamali/Desktop/Anish/USRS485/build/windows/x64/runner/Release/data/app.so")
+     "C:/Users/Kamali/Desktop/Anish/FIMWARE_MONITORING_TOOL/build/windows/x64/runner/Release/data/app.so")
     if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
       message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
     endif()
     if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
       message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
     endif()
-    file(INSTALL DESTINATION "C:/Users/Kamali/Desktop/Anish/USRS485/build/windows/x64/runner/Release/data" TYPE FILE FILES "C:/Users/Kamali/Desktop/Anish/USRS485/build/windows/app.so")
+    file(INSTALL DESTINATION "C:/Users/Kamali/Desktop/Anish/FIMWARE_MONITORING_TOOL/build/windows/x64/runner/Release/data" TYPE FILE FILES "C:/Users/Kamali/Desktop/Anish/FIMWARE_MONITORING_TOOL/build/windows/app.so")
   endif()
 endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "C:/Users/Kamali/Desktop/Anish/USRS485/build/windows/x64/install_local_manifest.txt"
+  file(WRITE "C:/Users/Kamali/Desktop/Anish/FIMWARE_MONITORING_TOOL/build/windows/x64/install_local_manifest.txt"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()
 if(CMAKE_INSTALL_COMPONENT)
@@ -319,6 +319,6 @@ else()
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "C:/Users/Kamali/Desktop/Anish/USRS485/build/windows/x64/${CMAKE_INSTALL_MANIFEST}"
+  file(WRITE "C:/Users/Kamali/Desktop/Anish/FIMWARE_MONITORING_TOOL/build/windows/x64/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()
